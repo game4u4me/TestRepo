@@ -4,7 +4,7 @@
 object Dependencies {
 
     // kotlin
-    const val kotlin =  "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
+    const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
     const val ktx = "androidx.core:core-ktx:${Versions.ktx}"
 
     // coroutine
@@ -28,7 +28,6 @@ object Dependencies {
     const val orhanobut = "com.orhanobut:logger:${Versions.orhanobut}"
 
     // Hilt
-    const val hilt =  "com.google.dagger:hilt-android:${Versions.daggerHilt}"
-    const val hiltCompiler =  "com.google.dagger:hilt-android-compiler:${Versions.daggerHilt}"
-
+    const val hilt = "com.google.dagger:hilt-android:${Versions.daggerHilt}"
+    const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Versions.daggerHilt}"
 }

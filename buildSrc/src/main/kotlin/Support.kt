@@ -11,7 +11,4 @@ object Support {
 
     // appCompat
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
-
-
-
 }

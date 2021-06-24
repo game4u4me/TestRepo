@@ -1,16 +1,12 @@
 
 Y
 )app/src/main/res/layout/activity_main.xml,7/6/76b07e40f24cce093536731477540f12e7da3cb6
-h
-8app/src/main/java/com/game4u4me/testrepo/MainActivity.kt,f/b/fb6f046866aa69d7ccbdeca8fc0a17f51c970e6c
 ?
 settings.gradle,0/5/05efc8b1657769a27696d478ded1e95f38737233
 A
 gradle.properties,2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4
 Ñ
 Tapp/documentation/html/app/com.game4u4me.testrepo/-main-activity/-main-activity.html,a/c/ac3fe0c76f5e640a2b732b3954b56004fc53db11
-Å
-Qapp/documentation/gfm/app/com.game4u4me.testrepo/-main-activity/-main-activity.md,d/7/d74aa90daf049cb599055fbb9c5d3ffd3d1d67c6
 d
 4app/documentation/html/images/anchor-copy-button.svg,8/7/8798f98c015ba289ed9e68cf02ffa69ed9750b0d
 \
@@ -33,12 +29,6 @@ l
 <app/documentation/html/app/com.game4u4me.testrepo/index.html,5/6/56723b3ac9e0a7318cc0eca4fad10def61f94a75
 Q
 !app/documentation/html/index.html,4/6/469b8a0702dbdd66aa8c7a166a3ccd24eeb62378
-x
-Happ/documentation/gfm/app/com.game4u4me.testrepo/-main-activity/index.md,d/1/d1012335363b3da18b31f209ceb72c7a0a165893
-i
-9app/documentation/gfm/app/com.game4u4me.testrepo/index.md,7/2/72fa762801f9f810102d442dd7f3562614e36226
-N
-app/documentation/gfm/index.md,c/4/c46c17ec533cc398bafded787892357604459df0
 `
 0app/documentation/html/styles/jetbrains-mono.css,6/4/645d1e60bb7c7808177a52b877d1d8e380cded02
 [
@@ -57,8 +47,6 @@ c
 3app/documentation/html/scripts/navigation-pane.json,8/c/8c1945d5efe37f82f9fa5af268f072ab9de85797
 
 Oapp/documentation/html/app/com.game4u4me.testrepo/-main-activity/on-create.html,9/a/9a6988298a9d8d514b2becf20d99d796cdf87266
-|
-Lapp/documentation/gfm/app/com.game4u4me.testrepo/-main-activity/on-create.md,8/5/8592953c3b9ec33eb07771dd1ccfb9b8e951f31c
 V
 &app/documentation/gfm/app/package-list,3/2/323c12f12b3fc622bf0cb1cf436d62efdc6c4b9b
 W
@@ -71,7 +59,5 @@ h
 8app/documentation/html/scripts/sourceset_dependencies.js,4/c/4cab49fb48998ea60b1b045c763b8ccb45877fd3
 W
 'app/documentation/html/styles/style.css,4/4/443302de8b810b93f63d5611a8604b56b4a8b9be
-?
-spotless.gradle,b/1/b12ec6d02d4de2c80cf1e9ce68083d3d124b0292
 I
 buildSrc/build.gradle.kts,d/9/d90b697280fada81e52ec92d24725920f1cb087b

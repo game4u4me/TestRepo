@@ -28,5 +28,4 @@ object Jetpack {
 
     // paging
     const val paging = "androidx.paging:paging-runtime-ktx:${Versions.paging}"
-
 }
