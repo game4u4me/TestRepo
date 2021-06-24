@@ -1,0 +1,8 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:com.game4u4me.testrepo////PointingToDeclaration/app/com.game4u4me.testrepo/index.md
+$dokka.location:com.game4u4me.testrepo/MainActivity///PointingToDeclaration/app/com.game4u4me.testrepo/-main-activity/index.md
+$dokka.location:com.game4u4me.testrepo/MainActivity/MainActivity/#/PointingToDeclaration/app/com.game4u4me.testrepo/-main-activity/-main-activity.md
+$dokka.location:com.game4u4me.testrepo/MainActivity/onCreate/#android.os.Bundle?/PointingToDeclaration/app/com.game4u4me.testrepo/-main-activity/on-create.md
+com.game4u4me.testrepo
+

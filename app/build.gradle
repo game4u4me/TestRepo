@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id "org.jetbrains.dokka"
 }
 
 android {
@@ -54,6 +55,38 @@ android {
         kotlinOptions.freeCompilerArgs += ["-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"]
     }
 
+}
+
+tasks.dokkaHtml.configure {
+    dokkaSourceSets {
+        named("main") {
+            // don't link to android sdk
+            noAndroidSdkLink.set(false)
+            // hide the deprecated
+            skipDeprecated.set(true)
+            // show private properties
+            includeNonPublic.set(true)
+            // Suppress all inherited members that were not overridden in a given class.
+            suppressInheritedMembers.set(true)
+        }
+    }
+    outputDirectory.set(file("documentation/html"))
+}
+
+tasks.dokkaGfm.configure {
+    dokkaSourceSets {
+        named("main") {
+            // don't link to android sdk
+            noAndroidSdkLink.set(false)
+            // hide the deprecated
+            skipDeprecated.set(true)
+            // show private properties
+            includeNonPublic.set(true)
+            // Suppress all inherited members that were not overridden in a given class.
+            suppressInheritedMembers.set(true)
+        }
+    }
+    outputDirectory.set(file("documentation/gfm"))
 }
 
 dependencies {
