@@ -1,20 +1,24 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
     id "org.jetbrains.dokka"
+    id 'dagger.hilt.android.plugin'
+    id "androidx.navigation.safeargs.kotlin"
+    id "kotlin-parcelize"
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion AppConfig.compileSdkVersion
+    buildToolsVersion AppConfig.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.game4u4me.testrepo"
-        minSdkVersion 23
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
-
+        applicationId AppConfig.applicationId
+        minSdkVersion AppConfig.minSdkVersion
+        targetSdkVersion AppConfig.targetSdkVersion
+        versionCode AppConfig.versionCode
+        versionName AppConfig.versionName
+        multiDexEnabled = true
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -91,12 +95,72 @@ tasks.dokkaGfm.configure {
 
 dependencies {
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.5.0'
-    implementation 'androidx.appcompat:appcompat:1.3.0'
-    implementation 'com.google.android.material:material:1.3.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // kotlin
+    implementation Dependencies.kotlin
+    implementation Dependencies.ktx
+
+    // multidex
+    implementation(Dependencies.multidex)
+
+    // support libraries
+    implementation(Support.material)
+    implementation(Support.constraintLayout)
+    implementation(Support.appCompat)
+
+    // coroutine
+    implementation(Dependencies.coroutineCore)
+    implementation(Dependencies.coroutineAndroid)
+
+    // networking
+    implementation(Dependencies.retrofit)
+    implementation(Dependencies.gsonConverter)
+    implementation(Dependencies.okhttp)
+    implementation(Dependencies.gson)
+
+    // image
+    implementation(Dependencies.glide)
+
+    // logging
+    implementation(Dependencies.timber)
+    implementation(Dependencies.orhanobut)
+
+    // di
+    implementation(Dependencies.hilt)
+    kapt(Dependencies.hiltCompiler)
+
+    // jetpack libraries
+    implementation(Jetpack.room)
+    implementation(Jetpack.roomExt)
+    kapt(Jetpack.roomCompiler)
+
+    implementation(Jetpack.dataStore)
+
+    implementation(Jetpack.lifecycleViewModel)
+    implementation(Jetpack.lifecycleLiveData)
+
+    implementation(Jetpack.workManger)
+
+    implementation(Jetpack.navigation)
+    implementation(Jetpack.navigationUi)
+
+    implementation(Jetpack.transition)
+
+    implementation(Jetpack.paging)
+
+    // unit testing
+    testImplementation UnitTest.testJunit
+    testImplementation UnitTest.testTruth
+    testImplementation UnitTest.testMockito
+
+    // instrumentation testing
+    androidTestImplementation InstrumentationTest.androidTestTruth
+    androidTestImplementation InstrumentationTest.androidTestAndroidxTestRule
+    androidTestImplementation InstrumentationTest.androidTestAndroidxTestRunner
+    androidTestImplementation InstrumentationTest.androidTestAndroidxTestJunitExt
+    androidTestImplementation InstrumentationTest.androidTestAndroidxTestExtKtx
+    androidTestImplementation InstrumentationTest.androidTestEspressoCore
+    androidTestImplementation InstrumentationTest.androidTestHilt
+    androidTestImplementation InstrumentationTest.androidTestRoom
+    androidTestImplementation InstrumentationTest.androidTestWorkManager
+
 }

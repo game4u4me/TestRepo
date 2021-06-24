@@ -5,10 +5,10 @@ object Versions {
 
     // Kotlin
     const val kotlin = "1.5.10"
-    const val ktx = "1.3.2"
+    const val ktx = "1.5.0"
 
     // Gradle build tool version
-    const val gradle = "7.1.0-alpha02"
+    const val gradle = "4.2.1"
 
     // Multidex
     const val multidex = "2.0.1"
@@ -43,22 +43,26 @@ object Versions {
     const val dataStore = "1.0.0-beta02"
     const val transition = "1.4.1"
 
-    // Compose
-    const val compose = "1.0.0-beta07"
-    const val composeActivity = "1.3.0-beta02"
     // support libraries
     const val appCompat = "1.2.0"
     const val material = "1.3.0"
     const val constraintLayout = "2.0.4"
 
-    // code style ktlint
-    const val ktlint = "10.1.0"
+    // code style spotless
+    const val spotless = "5.14.0"
+
+    // dokka documentation
+    const val dokka = "1.4.32"
 
     // dependencies update checker
-    const val remalDependencyChecker = "1.3.3"
+    const val dependencyUpdate = "0.39.0"
 
     // Testing libraries
-
-
+    const val truth = "1.1.3"
+    const val mockito = "3.11.2"
+    const val androidxTestExt = "1.1.2"
+    const val androidxTest = "1.3.0"
+    const val espressoCore = "3.3.0"
+    const val junit = "4.13.2"
 
 }
