@@ -42,7 +42,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
+          BRANCH: doc
           FOLDER: app/documentation/html
 
   unit-test:
@@ -76,7 +76,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: 'adopt'
-          java-version: 1.8
+          java-version: 16.0.1+9
 
       - name: Build with Gradle
         run: ./gradlew build
