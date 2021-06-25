@@ -85,3 +85,12 @@ S
 #buildSrc/src/main/kotlin/Support.kt,f/a/faf521709816a5b0551d7a30dcf7d1b53747bfb0
 T
 $buildSrc/src/main/kotlin/Versions.kt,d/f/df7250bdfd4d4cbe77a1ebc3b950afc6e6bcfecd
+I
+buildSrc/build.gradle.kts,d/9/d90b697280fada81e52ec92d24725920f1cb087b
+@
+app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
+<
+build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
