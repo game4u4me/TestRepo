@@ -33,17 +33,14 @@ jobs:
       - name: Run spotless check
         run: ./gradlew dokkaHtml
 
-      - name: Stage documentation to github
-        run: git add .
-
-      - name: Commit documentation
-        run: git commit -m "update doc"
-
-      - name: Push documentation to github
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+      - name: Commit and Push documentation to github
+        uses: actions/checkout@v2
+        run: |
+          git config --global user.name 'game4u4me'
+          git config --global user.email 'game4u4me2@gmail.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git commit -am "Automated report"
+          git push
 
   unit-test:
     needs: [ lint ]
