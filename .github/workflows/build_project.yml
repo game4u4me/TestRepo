@@ -21,21 +21,6 @@ jobs:
       - name: Run spotless code fix
         run: ./gradlew spotlessApply
 
-      - name: Upload html test report
-        uses: actions/upload-artifact@v2
-        with:
-          name: spotless_report.html
-          path: app/build/reports/spotless-results-debug.html
-
-      - name: Check Kotlin Formatting
-        run: ./gradlew ktlintCheck --continue
-
-      - name: Upload html ktlint report
-        uses: actions/upload-artifact@v2
-        with:
-          name: ktlint.html
-          path: app/build/reports/ktlint-result-debug.html
-
   build-documentation:
     needs: [ lint ]
     runs-on: ubuntu-latest

@@ -13,3 +13,15 @@
 .externalNativeBuild
 .cxx
 local.properties
+.idea/modules/
+.idea/sonarlint/issuestore/2/d/
+.idea/sonarlint/issuestore/4/8/
+.idea/sonarlint/issuestore/9/4/
+.idea/sonarlint/issuestore/b/
+.idea/sonarlint/issuestore/c/7/
+.idea/sonarlint/issuestore/f/e/
+app/libs/
+buildSrc/build/classes/
+buildSrc/build/kotlin/compileKotlin/
+buildSrc/build/kotlin/sessions/
+buildSrc/build/pluginDescriptors/

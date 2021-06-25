@@ -59,16 +59,10 @@ h
 8app/documentation/html/scripts/sourceset_dependencies.js,4/c/4cab49fb48998ea60b1b045c763b8ccb45877fd3
 W
 'app/documentation/html/styles/style.css,4/4/443302de8b810b93f63d5611a8604b56b4a8b9be
-I
-buildSrc/build.gradle.kts,d/9/d90b697280fada81e52ec92d24725920f1cb087b
 Å
 Qapp/documentation/gfm/app/com.game4u4me.testrepo/-main-activity/-main-activity.md,d/7/d74aa90daf049cb599055fbb9c5d3ffd3d1d67c6
 U
 %buildSrc/src/main/kotlin/AppConfig.kt,6/1/61d56f550b1909fcd76e8a16ad43b765e4b54430
-@
-app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
-<
-build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 U
 %buildSrc/src/main/kotlin/BuildTool.kt,d/3/d328df386c5ad27e75ebf5247cf715628934c351
 X
