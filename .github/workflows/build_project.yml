@@ -48,11 +48,17 @@ jobs:
       - name: Run spotless check
         run: ./gradlew dokkaHtml
 
-      - name: Upload html documentation
-        uses: actions/upload-artifact@v2
-        with:
-          name: index.html
-          path: app/documentation/html/index.html
+      - name: Stage documentation to github
+        run: git add .
+
+      - name: Commit documentation
+        run: git commit -m "update doc"
+
+      - name: Push documentation to github
+        uses: ad-m/github-push-action@master
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            branch: ${{ github.ref }}
 
   unit-test:
     needs: [ lint ]
