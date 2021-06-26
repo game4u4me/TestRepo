@@ -87,9 +87,6 @@ jobs:
       - name: Run Debug Tests
         run: ./gradlew testDebugUnitTest
 
-      - name: Run Debug ktlint
-        run: ./gradlew ktlintDebugCheck
-
       - name: Run Debug Lint
         run: ./gradlew lintDebug
 
